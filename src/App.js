@@ -1,14 +1,14 @@
-import './App.css';
+import s from './App.module.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className={s.app}>
+      <header className={s.appHeader}>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-          className="App-link"
+          className={s.appLink}
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
