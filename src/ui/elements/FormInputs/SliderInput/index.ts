@@ -1,1 +1,1 @@
-export { default } from './sliderInput.tsx';
+export { default } from './sliderInput';

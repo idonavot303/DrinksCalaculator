@@ -1,9 +1,7 @@
 import React, { FC } from 'react';
 import s from './button.module.scss';
 
-export type ButtonProps = {
-  children: React.ReactNode;
-};
+export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button: FC<ButtonProps> = ({ children, ...rest }) => {
   return (

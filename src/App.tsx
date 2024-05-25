@@ -1,11 +1,11 @@
 import React from 'react';
-import s from './App.module.scss';
 import { FormContextProvider } from './context/FormContext';
+import HomePage from './ui/pages/HomePage';
 
 const App: React.FC = () => {
   return (
     <FormContextProvider>
-      <div className={s.app}></div>
+      <HomePage />
     </FormContextProvider>
   );
 };
