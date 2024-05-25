@@ -1,24 +1,13 @@
 import React from 'react';
 import s from './App.module.scss';
+import { FormContextProvider } from './context/FormContext';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className={s.app}>
-      <header className={s.appHeader}>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className={s.appLink}
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FormContextProvider>
+      <div className={s.app}></div>
+    </FormContextProvider>
   );
-}
+};
 
 export default App;
